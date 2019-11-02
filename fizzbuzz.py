@@ -1,11 +1,11 @@
-for num in range(1,101):
-    if num%3 == 0:
-        if num%5 ==0:
-            print('fizz buzz')
+def fizzbuzz (num):
+    for i in range(1, num+1):
+        if i%3 == 0:
+            if i%5 ==0:
+                print("FizzBuzz")
+            else:
+                print("Fizz")
+        elif i%5 == 0:
+            print("Buzz")
         else:
-            print('fizz')
-    elif num%5 == 0:
-        print('buzz')
-
-    else:
-        print(num)
+            print(i)
